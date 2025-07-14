@@ -1,0 +1,255 @@
+<!-- 
+***Applying CSS
+
+1. What are the three ways to apply CSS to an HTML document?
+
+Inline CSS – Applied directly to an HTML element using the style attribute.
+
+Internal CSS – Written inside a <style> tag in the <head> of the HTML file.
+
+External CSS – Linked via a separate .css file using the <link> tag.
+
+
+
+2. How do you link an external CSS file to an HTML page?
+
+html
+Copy
+Edit
+<link rel="stylesheet" href="styles.css">
+
+
+
+3. Where should you place the <style> tag in an HTML file?
+
+Inside the <head> section.
+
+
+
+
+***CSS Types & Specificity
+
+4. What is the difference between inline and internal CSS?
+
+Inline CSS: Applied directly on elements, e.g., <p style="color:red;">.
+
+Internal CSS: Written in <style> tag, applies to multiple elements.
+
+
+
+***Inline CSS overrides internal CSS due to higher specificity.
+
+5. Which CSS implementation has the highest specificity: inline, internal, or external?
+
+Inline CSS > Internal CSS > External CSS
+(Specificity order from highest to lowest)
+
+
+
+
+***Selectors & Rules
+
+6. How do you select an element with a specific ID in CSS?
+
+css
+Copy
+Edit
+#elementID {
+  /* styles */
+}
+
+
+
+7. Write a CSS rule to apply red color to all <p> elements.
+
+css
+Copy
+Edit
+p {
+  color: red;
+}
+
+
+
+8. Write a CSS rule to apply background color to a class named .card.
+
+css
+Copy
+Edit
+.card {
+  background-color: lightgray;
+}
+
+
+
+9. What is the difference between .title and #title selectors?
+
+.title selects class="title"
+
+#title selects id="title"
+
+
+
+
+10. Which selector has more specificity: class or ID?
+
+ID (#id) has more specificity than class (.class)
+
+
+
+
+***Borders
+
+11. Write a CSS rule to give a solid red border of 2px to a div.
+
+css
+Copy
+Edit
+div {
+  border: 2px solid red;
+}
+
+
+
+12. How do you remove the border from an input element?
+
+css
+Copy
+Edit
+input {
+  border: none;
+}
+
+
+
+13. Apply a different border to each side of a box using CSS.
+
+css
+Copy
+Edit
+box {
+  border-top: 2px solid red;
+  border-right: 3px dashed green;
+  border-bottom: 1px dotted blue;
+  border-left: 4px solid black;
+}
+
+
+
+14. What does the shorthand border: 1px dashed blue; mean?
+
+A 1px wide dashed border in blue on all 4 sides.
+
+
+
+
+15. Can we use border on inline elements? What happens?
+
+Yes, but the element's dimensions won’t expand to fit the border unless you change the display to inline-block or block.
+
+
+
+***Border Radius
+
+16. How do you make a square div appear circular using border-radius?
+
+css
+Copy
+Edit
+div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+17. What will border-radius: 10px 20px 30px 40px; do?
+
+Applies border-radius clockwise from top-left:
+
+Top-left: 10px
+
+Top-right: 20px
+
+Bottom-right: 30px
+
+Bottom-left: 40px
+
+
+
+18. Write CSS to round only the top-left and bottom-right corners.
+
+css
+Copy
+Edit
+element {
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+19. Can border-radius be applied to images?
+
+Yes, it works well for rounding image corners or making circular images.
+
+20. What happens if you apply border-radius to an element with an outline?
+
+The outline doesn’t follow the border-radius curve and stays rectangular unless styled separately.
+
+
+
+
+***Margin vs Padding
+
+21. What’s the difference between margin and padding?
+
+Margin: space outside the element’s border.
+
+Padding: space inside, between content and border.
+
+
+
+22. How do you apply equal margin on all sides?
+
+css
+Copy
+Edit
+element {
+  margin: 20px;
+}
+
+
+
+23. What will margin: 10px 20px; do?
+
+Top & bottom: 10px
+
+Left & right: 20px
+
+
+
+24. How can you center a block element horizontally using margin?
+
+css
+Copy
+Edit
+element {
+  margin: 0 auto;
+  width: [set a width];
+}
+
+
+
+25. What is margin collapse? Give an example.
+
+When two vertical margins meet, the larger one remains, and the smaller one collapses.
+Example:
+
+html
+Copy
+Edit
+<div style="margin-bottom: 30px;"></div>
+<div style="margin-top: 20px;"></div>
+→ The total vertical space between them is 30px, not 50px.
+
+Let me know if you'd like this in a printable PDF or formatted file!
