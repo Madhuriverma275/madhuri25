@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+.top{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .zay{
+            font-size: 55px;
+            width: 20%;
+            color: green;
+            text-align: center;
+            
+        }
+        .home{
+            width: 55%;
+        }
+        .home ul{
+            text-align: start;
+            display: flex;
+          
+            list-style: none;
+        }
+        .home ul li{
+            
+            padding: 6px 55px;
+        }
+        .icon{
+            width: 25%;
+            text-align: center;
+            
+            padding-top: 25px;
+        }
+        .box1{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            background-color: rgb(226, 226, 226);
+        }
+        .left{
+            width: 40px;
+            height: 100%;
+            font-size:40px;
+            /* text-align: center; */
+            /* align-items: center; */
+            /* margin: auto; */
+            padding:220px 10px ;
+        }
+        .right{
+            width: 40px;
+            height: 100%;
+            font-size: 40px;
+            padding: 220px 10px;
+        }
+        .text1{
+            
+            width: 40%;
+            padding: 120px 200px 120px 100px;
+        }
+        .text1 h1{
+            color: grey;
+        }
+        .img1{
+            padding: 60px 100px 0px 35px;
+           width: 40%;
+           
+        }
+
+        .box2{
+            width: 100%;
+            height: 650px;
+            
+            display: flex;
+            flex-direction: column;
+        }
+        .text2{
+            height: 120px;
+            text-align: center;
+           
+            font-size: 40px;
+            color: grey;
+            padding-top: 30px;
+        }
+        
+        .text2 p{
+            font-size:medium;
+            color:black;
+        } 
+        .img2{
+            display: flex;
+            
+            padding: 60px 28px 40px 28px;
+        } 
+        .watch{
+            flex-grow: 1;
+            text-align: center;
+        }
+        .watch img{
+            height: 250px;
+            width: 250px;
+            border-radius:50% ;
+        }
+        
+        .shoe{
+            flex-grow: 1;
+           text-align: center;
+        }
+        .shoe img{
+            
+            height: 250px;
+            width: 250px;
+            border-radius:50% ;
+        }
+        .access{
+            flex-grow: 1;
+            text-align: center;
+        }
+        .access img{
+            
+            height: 250px;
+            width: 250px;
+            border-radius:50% ;
+        }  
+        .img2 button{
+            width: 80px;
+            height: 30px;
+            background-color: #38a44d;
+            color: aliceblue;
+            border: 1px solid green;
+            border-radius: 5px;
+        }
+
+        .box3{
+            background-color: rgb(225, 227, 251);
+            width: 100%;
+            height: 750px;
+        }
+        .text3{
+            height: 120px;
+            text-align: center;
+           
+            font-size: 40px;
+            color: grey;
+            padding-top: 40px;
+        }
+        .text3 p{
+             font-size:medium;
+             color: #4e4e4e;
+        }
+        .img3{
+            display: flex;
+            width: 85%;
+            margin: auto;
+            justify-content: space-between;
+        }
+        .gym{
+            width: 330px;
+            border: 1px solid rgb(150, 149, 149);
+            background-color: white;
+            
+        }
+        .cloud{
+            width: 330px;
+            border: 1px solid rgb(150, 149, 149);
+            background-color: white;
+        }
+        .summer{
+            width: 330px;
+            border: 1px solid rgb(150, 149, 149);
+            background-color: white;
+        }
+        .img3 img{
+            width: 100%;
+            height: 200px;
+        }
+        .img3 i{
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        .img3 p{
+            font-size: 30px;
+        }
+        .gtext{
+            margin: 0px 0px 30px 20px;
+        }
+        .img3 .review{
+            font-size: 18px; 
+            color:grey;
+        }
+        .box4{
+            width: 100%;
+            height: 550px;
+            background-color: rgb(32, 32, 41);
+        }
+        .up{
+            margin: auto;
+            width: 80%;
+            height:72% ;
+            display: flex;
+            color:rgb(214, 225, 234);
+        }
+        .shop{width: 33.33%;
+            
+        }
+        .shop p{
+            font-size: 35px;
+            color: #38a44d;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        .products{
+            width: 33.33%;
+        }
+        .products p{
+            font-size: 35px;
+             margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        .info{
+            width: 33.33%;
+        }
+        .info p{
+            font-size: 35px;
+             margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        
+        .down{
+             margin: auto;
+            width: 80%;
+            display: flex;
+            color:rgb(214, 225, 234);
+        }
+        .social{
+            width: 50%;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+        .email{
+            width: 50%;
+            margin-top: 40px;
+            padding-left: 445px  ;
+            /* color: rgb(32, 32, 41); */
+             /* color:rgb(133, 138, 142); */
+        }
+        .email input{
+            background-color:rgb(32, 32, 41);
+            height: 20px;
+        }
+        .email button{
+            height: 28px;
+            width: 110px;
+            background-color: #38a44d;
+            color:rgb(214, 225, 234) ;
+        }
+
+</style>
+
+
+
+</head>
+<body>
+    <header class="top">
+        <div class="zay"><b>Zay</b></div>
+        <div class="home">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Shop</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="icon"><i class="fa-solid fa-magnifying-glass"></i>&emsp;<i class="fa-solid fa-cart-shopping"></i>&emsp;<i class="fa-solid fa-heart"></i></div>
+    </header>
+    <div class="box1">
+        <div class="left"><i class="fa-solid fa-angle-left" style="color: #3bb052;"></i>
+        </div>
+        <div class="text1"><h1>Proident occaecat</h1><p><h3>Aliquip ex ea commodo consequent</h3></p>
+        <p>you are permitted to use this zay css templete for your comercial website. you are <b>not permitted</b> to re-distribute the templete ZIP file in any kind of templete collection website. </p></div>
+        <div class="img1"><img src="https://imgs.search.brave.com/68WVBQWROZZ9MvxAAYsOAbgRq9IhF0qzxnze-ZLLBBg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdG9y/YWdlLnNraW5zb3J0/LmNvbS85eWhkbHBt/OXZ3bjRjZ2l1OGhi/b214b24zdnBs" alt="curology custom formula"></div>
+        <div class="right"><i class="fa-solid fa-angle-right" style="color: #44bb58;"></i></div>
+    </div>
+    <div class="box2">
+        <div class="text2">Categories of the Month <p> Exceptuere sint occneuj cuppudat mon ieornt, sunt in cipts qui <br> offica desetrna minolat ih id key laboram.</p></div>
+        <div class="img2">
+            <div class="watch"><img src="https://imgs.search.brave.com/QfgPiD08_np6AGe0JegVUUdYi0BlmflYP_t_3grpGe4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMjgw/MjUwL3BleGVscy1w/aG90by0yODAyNTAu/anBlZz9hdXRvPWNv/bXByZXNzJmNzPXRp/bnlzcmdiJmRwcj0x/Jnc9NTAw" alt="watch">
+            <p><h3>Watches</h3></p>
+        <br>
+            <button>Go Shop</button>
+    </div>
+            <div class="shoe"><img src="https://imgs.search.brave.com/Whh3juJ9i4ITVarQukYVH08DtyQJRHTHdHaxNVfT34k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzQ0LzY2Lzkw/LzM2MF9GXzExNDQ2/NjkwMjJfT0ZmSjZr/ZEN6MjlPUGNoVUho/cmdOcUYwdDBTc1Vk/aU4uanBn" alt="shoes">
+            <p><h3>Shoes</h3></p>
+        <br>
+            <button>Go Shop</button>
+    </div>
+            <div class="access"><img src="https://imgs.search.brave.com/9d7jbYiyGMTEBw0SDw_qSUJMa_LH5paH4ow1zslQ13c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzI5NzE3NzEyL3Iv/aWwvYjUzY2RhLzM4/NDczNDQ1MTgvaWxf/MzQweDI3MC4zODQ3/MzQ0NTE4Xzlha2gu/anBn" alt="accessories">
+            <p><h3>Accessories</h3></p>
+        <br>
+            <button>Go Shop</button>
+    </div>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="text3">Featured Product <p>Reprenstdit in vojdykstveliy esse illium solroe eunks nulla <br>particilr. excepter sint occuresnce cupid non proident.</p></div>
+        <br><div class="img3">
+            <div class="gym"><img src="https://imgs.search.brave.com/hCcqNh72LJcFn1rXVJQweoqD68m52lZWt45f5oDLIU4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjMv/OTk5LzIxNi9zbWFs/bC93ZWlnaHRzLW5l/eHQtdG8tYmFyYmVs/bC1pbi1hLWd5bS1n/ZW5lcmF0aXZlLWFp/LXBob3RvLmpwZw" alt="gym weights">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;<i class="fa-solid fa-star" style="color: #a4a5a8;"></i>&nbsp;<i class="fa-solid fa-star" style="color: #a4a5a8;"></i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $240.00
+        <div class="gtext"><p>Gym Weight</p>Lorem ipsum dolor sit amet <br>
+         consectetur adipisicing elit.fugiat <br> culpa incidunt in labore conseq.
+        <p class="review">reviews (24)</p> </div>
+        </div>
+
+            <div class="cloud"><img src="https://imgs.search.brave.com/QQBRNAYBWMrLI0izplaNFAH5EBhqZhQbtphHazQtkgc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmcu/cG5ndHJlZS5jb20v/dGh1bWJfYmFjay9m/aDI2MC9iYWNrZ3Jv/dW5kLzIwMjMwNjE3/L3BuZ3RyZWUtdGhl/LWxvdy1pbWFnZV8y/OTQ3MzIwLmpwZw" alt="shoe">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;<i class="fa-solid fa-star" style="color: #a4a5a8;"></i>&nbsp;<i class="fa-solid fa-star" style="color: #a4a5a8;"></i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $480.00
+             <div class="gtext"><p>Cloud Nike Shoes</p>Lorem ipsum dolor sit amet <br>
+         consectetur adipisicing elit.fugiat <br> culpa incidunt in labore conseq.
+        <p class="review">reviews (48)</p> </div></div>
+
+            <div class="summer"><img src="https://imgs.search.brave.com/Y5Pr40CMKXeiuK1K5AAxHRzzes1jdm6E5OeQ-tUaR-s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzMwLzE0LzIz/LzM2MF9GXzUzMDE0/MjMzM19lMEo2SkJ0/a1p6alRGcFRJQnBI/YThMZ0FnWGtMOHdu/dC5qcGc" alt="shoe">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i>&nbsp;<i class="fa-solid fa-star" style="color: #FFD43B;"></i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $360.00
+             <div class="gtext"><p>Summer Addides <br> Shoes</p>Lorem ipsum dolor sit amet <br>
+         consectetur adipisicing elit.fugiat <br> culpa incidunt in labore conseq.
+        <p class="review">reviews (74)</p> </div></div>
+        </div>
+    </div>
+
+    <div class="box4">
+        <div class="up">
+            <div class="shop">
+                <p>Zay Shop</p>
+                <hr><br>
+                <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> 123 Consector at lingus 10660 <br><br>
+                <i class="fa-solid fa-phone-flip" style="color: #ffffff;"></i> 010-020-0304 <br><br>
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i> info@gmail.com
+            </div>
+            <div class="products">
+                <p>Products</p>
+                <hr><br>
+                Luxury <br><br> Sports Wear <br><br> Men's Shoes <br><br> Women's Shoes <br><br> Popular Dress <br><br> Gym Accessories <br><br> Sports Shoes
+            </div>
+            <div class="info">
+                <p>Further info</p>
+                <hr><br>
+                Home <br><br> About us <br><br> Shop Locations <br><br>FAQs <br><br> Contact
+            </div>
+        </div>
+        <hr style="width: 80%;">
+        <div class="down">
+
+            <div class="social"><i class="fa-brands fa-facebook"></i>&emsp;&emsp;<i class="fa-brands fa-square-instagram"></i>&emsp;&emsp;<i class="fa-brands fa-square-twitter"></i>&emsp;&emsp;<i class="fa-brands fa-linkedin"></i></div>
+            <div class="email"><input placeholder="Email address" type="email"><button>Subscribe</button></div>
+        </div>
+    </div>
+</body>
+</html>
